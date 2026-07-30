@@ -137,6 +137,7 @@ name = "llm-learning"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "httpx" },
     { name = "openai" },
     { name = "python-dotenv" },
 ]
@@ -148,6 +149,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "httpx", specifier = ">=0.28.1" },
     { name = "openai", specifier = ">=2.50.0" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
 ]

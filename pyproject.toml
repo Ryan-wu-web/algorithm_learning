@@ -4,6 +4,7 @@
   description = "全栈开发转大模型学习项目"
   requires-python = ">=3.12,<3.13"
   dependencies = [
+    "httpx>=0.28.1",
     "openai>=2.50.0",
     "python-dotenv>=1.2.2",
 ]

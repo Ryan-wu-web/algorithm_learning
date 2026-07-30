@@ -1,6 +1,4 @@
 """处理用户输入、命令判断和会话历史。"""
-
-
 def normalize_question(question: str) -> str:
     """清理并校验用户问题。"""
     question = question.strip()
@@ -18,7 +16,6 @@ def build_system_prompt() -> str:
         "请使用清晰、准确的语言回答问题。"
     )
 
-
 def build_messages(question: str) -> list[dict[str, str]]:
     """将用户问题构造成模型消息列表。"""
     return [
@@ -27,7 +24,6 @@ def build_messages(question: str) -> list[dict[str, str]]:
             "content": question,
         }
     ]
-
 
 def append_message(
     messages: list[dict[str, str]],
@@ -41,7 +37,6 @@ def append_message(
             "content": content,
         }
     )
-
 
 def is_exit_command(text: str) -> bool:
     """判断用户是否希望结束对话。"""
